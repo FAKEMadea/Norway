@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Norway</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header_wrapper">
+
+                <div class="header_logo">
+                    <a href="" class="header_logo-link">
+                        <img src="img/svg/Visit%20Norway.svg" alt="Norway">
+                    </a>
+                </div>
+
+                <nav class="header_nav">
+                    <ul class="header_list">
+                        <li class="header_item">
+                            <a href="#!" class="header_link">Destinations</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#!" class="header_link">Blog</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#!" class="header_link">Contact</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#!" class="header_link"><img src="img/svg/menu%20nupp.svg" alt="menu"></a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- Header end -->
+
+    <!-- Intro start -->
+
+    <main class="main">
+
+
+        <section class="intro">
+            <div class="wrapper">
+                <h1 class="intro_title">
+                    Norway
+                </h1>
+                <p class="intro_subtitle">
+                    perfect place to relax
+                </p>
+                <li class="intro_button">
+                    <button type="button"><img src="img/svg/Plan%20your%20trip.svg" alt=""></button>
+                </li>
+
+            </div>
+        </section>
+
+        <!-- Intro end -->
+
+        <!-- Visiting start -->
+
+        <section class="visiting_places">
+
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="img/Visiting%20pic1.jpg" style="width:100%">
+
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="img/Visiting%20pic2.jpg" style="width:100%">
+
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="img/Visiting%20pic3.jpg" style="width:100%">
+
+                </div>
+
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <script>
+                var slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {
+                        slideIndex = 1
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                    setTimeout(showSlides, 4000); // Change image every 4 seconds
+                }
+
+            </script>
+        </section>
+
+
+    </main>
+
+
+</body>
+
+</html>
+
